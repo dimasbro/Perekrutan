@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="156170b1-9c2c-415e-b8ba-bea6a5c9d5d8">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="39"/>
+	<property name="ireport.y" value="75"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     pelamar.`id_pelamar` AS pelamar_id_pelamar,
+     pelamar.`nama_pelamar` AS pelamar_nama_pelamar,
+     pelamar.`jenkel_pelamar` AS pelamar_jenkel_pelamar,
+     pelamar.`alamat_pelamar` AS pelamar_alamat_pelamar,
+     pelamar.`telepon_pelamar` AS pelamar_telepon_pelamar,
+     pelamar.`tempat_lahir_pelamar` AS pelamar_tempat_lahir_pelamar,
+     pelamar.`tgl_lahir_pelamar` AS pelamar_tgl_lahir_pelamar,
+     pelamar.`agama_pelamar` AS pelamar_agama_pelamar,
+     pelamar.`pendidikan_pelamar` AS pelamar_pendidikan_pelamar,
+     pelamar.`status_pelamar` AS pelamar_status_pelamar,
+     pelamar.`keahlian_pelamar` AS pelamar_keahlian_pelamar,
+     pelamar.`pengalaman_pelamar` AS pelamar_pengalaman_pelamar,
+     pelamar.`posisi_pelamar` AS pelamar_posisi_pelamar,
+     pelamar.`tgl_pelamar` AS pelamar_tgl_pelamar
+FROM
+     `pelamar` pelamar]]>
+	</queryString>
+	<field name="pelamar_id_pelamar" class="java.lang.String"/>
+	<field name="pelamar_nama_pelamar" class="java.lang.String"/>
+	<field name="pelamar_jenkel_pelamar" class="java.lang.String"/>
+	<field name="pelamar_alamat_pelamar" class="java.lang.String"/>
+	<field name="pelamar_telepon_pelamar" class="java.lang.String"/>
+	<field name="pelamar_tempat_lahir_pelamar" class="java.lang.String"/>
+	<field name="pelamar_tgl_lahir_pelamar" class="java.sql.Date"/>
+	<field name="pelamar_agama_pelamar" class="java.lang.String"/>
+	<field name="pelamar_pendidikan_pelamar" class="java.lang.String"/>
+	<field name="pelamar_status_pelamar" class="java.lang.String"/>
+	<field name="pelamar_keahlian_pelamar" class="java.lang.String"/>
+	<field name="pelamar_pengalaman_pelamar" class="java.lang.String"/>
+	<field name="pelamar_posisi_pelamar" class="java.lang.String"/>
+	<field name="pelamar_tgl_pelamar" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="138" splitType="Stretch">
+			<image>
+				<reportElement x="283" y="10" width="236" height="47" uuid="b8f08456-158d-43a2-a842-e042b8d6d52b"/>
+				<imageExpression><![CDATA["D:\\project java\\Perekrutan\\src\\Laporan\\logo yms.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="1" y="102" width="802" height="1" uuid="1291629c-9530-4457-ac3b-b47d01a4b71a"/>
+			</line>
+			<staticText>
+				<reportElement x="1" y="65" width="802" height="14" uuid="555aa570-5ddd-4435-83f7-5ab3b65ba056"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Complex Pertokoan Glodok Plaza Blok F No. 115, Taman Sari, Jakarta Barat 11180]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="78" width="802" height="14" uuid="54532847-9e1f-4607-bfda-e8b289382f28"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Telp. (021) 777 456, Email. jakarta@yakinmaju.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="118" width="802" height="20" uuid="ce8398b2-65ac-445a-8a52-ca8493963211"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA PELAMAR]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="41" width="66" height="20" backcolor="#CCCCCC" uuid="7b5b7ccc-41a9-4da5-8682-4942f6323747"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="41" width="66" height="20" uuid="b1732bb9-c4ec-4e63-8e95-af00c359d378"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ID PELAMAR]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="66" y="41" width="69" height="20" backcolor="#CCCCCC" uuid="62be2ea8-d611-4c79-81ee-21adb8af836f"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="66" y="41" width="69" height="20" uuid="c2dbc6fc-98ea-4680-be31-040437549c67"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="135" y="41" width="47" height="20" backcolor="#CCCCCC" uuid="f0cbf4f2-9675-4cba-9780-6fd42941badc"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="135" y="41" width="47" height="20" uuid="4aeb7608-bf30-4eca-a325-a2bb4192a2fb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[JENKEL]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="182" y="41" width="55" height="20" backcolor="#CCCCCC" uuid="dcd0de94-3fcc-4346-9e7f-407cd6fd2b77"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="182" y="41" width="55" height="20" uuid="4ca7b65f-f9cc-4a79-9d99-b2020d3e46f6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ALAMAT]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="237" y="41" width="57" height="20" backcolor="#CCCCCC" uuid="a10bf0ea-de1b-4bd7-ad89-70f59416a7c8"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="237" y="41" width="57" height="20" uuid="5c452171-14a1-4b26-b073-96c306dd4663"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[TELEPON]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="294" y="41" width="78" height="20" backcolor="#CCCCCC" uuid="87a5237f-1b8a-475a-a810-9d4647956333"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="294" y="41" width="78" height="20" uuid="9e60e281-0f2a-40be-b26e-2f4dcbbd4799"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[TEMPAT LAHIR]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="372" y="41" width="55" height="20" backcolor="#CCCCCC" uuid="6a1b1635-1df5-4397-9da7-10c47b4fc85c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="372" y="41" width="55" height="20" uuid="7f29b79d-ccbe-4176-8277-5e81ba356876"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[TGL LAHIR]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="427" y="41" width="40" height="20" backcolor="#CCCCCC" uuid="ef78402d-df44-4b69-8569-455110ecba60"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="427" y="41" width="40" height="20" uuid="6a6841fa-afc6-4bb8-84d4-f5b8273279b7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[AGAMA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="467" y="41" width="64" height="20" backcolor="#CCCCCC" uuid="51c5fb3f-a3f0-4868-af83-199e46d70051"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="467" y="41" width="64" height="20" uuid="67e7b2cc-edaf-443c-9dc3-241b43de99f7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[PENDIDIKAN]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="531" y="41" width="44" height="20" backcolor="#CCCCCC" uuid="ef598498-c46f-48f5-bfd5-c006900e43da"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="531" y="41" width="44" height="20" uuid="a431859d-a81b-43b3-b1b2-ce139b89c21d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[STATUS]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="575" y="41" width="52" height="20" backcolor="#CCCCCC" uuid="ecc14191-8188-483c-ac4a-a17256d578dd"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="575" y="41" width="52" height="20" uuid="2c1fd63a-0dfc-480a-808d-5a529d3ba8fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[KEAHLIAN]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="627" y="41" width="72" height="20" backcolor="#CCCCCC" uuid="352a5aaf-8f4b-4530-af04-04d572aac906"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="627" y="41" width="72" height="20" uuid="bdfa1044-9411-4078-90cb-6e22e60d6378"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[PENGALAMAN]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="699" y="41" width="41" height="20" backcolor="#CCCCCC" uuid="b4ef0bc2-c2b0-4e28-9314-156a3972a9e3"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="699" y="41" width="41" height="20" uuid="5b1a889f-f140-48bb-8fcd-4277bc44f579"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[POSISI]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="740" y="41" width="62" height="20" backcolor="#CCCCCC" uuid="9869b99c-1ac8-4217-b98e-c9a330e634ee"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="740" y="41" width="62" height="20" uuid="b6af2bc1-0e1d-4318-a570-9c0721328cd6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[TGL PELAMAR]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="740" y="0" width="62" height="20" uuid="96f1456d-47fd-43c5-8d6c-96d797341fa8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="699" y="0" width="41" height="20" uuid="6b8abc60-3a2d-4370-9984-29605d08ce7c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="627" y="0" width="72" height="20" uuid="a4ddaa61-4f95-4062-b31e-29f15c11263e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="575" y="0" width="52" height="20" uuid="9ea0beab-5e5e-48e4-94ca-6280cf546246"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="531" y="0" width="44" height="20" uuid="7b49b9e8-ef54-4eed-aab3-05fb0696b13f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="467" y="0" width="64" height="20" uuid="04772d7e-a9da-46c0-bf4a-a28a6d4cd701"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="427" y="0" width="40" height="20" uuid="8f8d081e-fcfe-4dc6-9a0a-6ebb06e7c870"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="372" y="0" width="55" height="20" uuid="c2ed088e-fa14-4cdb-a852-ba1dd8ce8ae9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="294" y="0" width="78" height="20" uuid="3b5c9a37-2c12-47dc-9eed-7c7de3bbb8dd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="237" y="0" width="57" height="20" uuid="fc7f048e-8a26-42f1-ac44-02439fee6fea"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="182" y="0" width="55" height="20" uuid="f957f061-35e9-4357-99ea-dd232722de05"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="135" y="0" width="47" height="20" uuid="318d5fe0-6290-4ebe-a46a-83957d4a8744"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="66" y="0" width="69" height="20" uuid="7e6b8985-d09c-4fb9-b305-9372ab40e8f7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="66" height="20" uuid="1e896f4d-4ca1-4e32-9f98-8058a82ae2fa"/>
+			</rectangle>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="1" y="0" width="66" height="20" uuid="723ee6d8-0de1-4572-8b2c-8557ef743991"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelamar_id_pelamar}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="66" y="0" width="69" height="20" uuid="31d5ddbe-1b96-4fc4-a6e2-d9e74088da34"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelamar_nama_pelamar}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="135" y="0" width="47" height="20" uuid="cabac5eb-c385-4c8a-b18d-16637b353971"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelamar_jenkel_pelamar}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="183" y="0" width="55" height="20" uuid="5060f9bf-c27a-4d3f-a948-08c6cc66368c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelamar_alamat_pelamar}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="237" y="0" width="57" height="20" uuid="527ffb50-e17e-481e-9749-5e8971afc848"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelamar_telepon_pelamar}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="295" y="0" width="78" height="20" uuid="443c0060-29fd-4962-877c-d4083989cdd8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelamar_tempat_lahir_pelamar}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd-MM-yyyy">
+				<reportElement x="373" y="0" width="55" height="20" uuid="6dc597a4-56b6-4322-b19a-43a21e6a4d7d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelamar_tgl_lahir_pelamar}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="427" y="0" width="40" height="20" uuid="978a5f39-226d-4778-b741-b5506e4e89b3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelamar_agama_pelamar}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="467" y="0" width="64" height="20" uuid="b53718c3-32d6-4bbf-94ff-0e762832d0d9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelamar_pendidikan_pelamar}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="532" y="0" width="44" height="20" uuid="847c651e-8d7e-4113-bb3c-4d9185d369ce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelamar_status_pelamar}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="FixRelativeToBottom" x="576" y="0" width="52" height="20" uuid="2564b842-996d-49c6-849b-6b0716ba3ac9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelamar_keahlian_pelamar}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="628" y="0" width="72" height="20" uuid="a68c6df1-a017-40af-9ff2-d265500ae936"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelamar_pengalaman_pelamar}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="700" y="0" width="41" height="20" uuid="52323826-1b82-4feb-a5d6-067f2f479c0e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelamar_posisi_pelamar}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd-MM-yyyy">
+				<reportElement x="741" y="0" width="62" height="20" uuid="00f56e02-134d-4276-9747-48bac24b253b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelamar_tgl_pelamar}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="21" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="146" splitType="Stretch">
+			<staticText>
+				<reportElement x="699" y="18" width="71" height="14" uuid="2d8ac883-7abb-4058-8e6f-cea18b091e77"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Mengetahui,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="699" y="32" width="71" height="14" uuid="c5d2ae11-3bcc-4773-b7ae-9d0de6d48b53"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[HRD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="699" y="79" width="71" height="14" uuid="918dd59e-f1f8-4b63-a0e6-05e06f9edef2"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Dono]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="100" width="802" height="1" uuid="fbaa570b-8afd-4d26-85a4-1981a461cf17"/>
+			</line>
+			<textField>
+				<reportElement x="679" y="105" width="80" height="20" uuid="a56b346c-9877-45ca-965e-91f3beb36334"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Halaman "+$V{PAGE_NUMBER}+" dari"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="759" y="105" width="40" height="20" uuid="6e26fda8-e055-49fb-91f9-a33ef7d9cc42"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="691" y="4" width="43" height="14" uuid="cc07522f-f82e-4652-905b-871e1b643ce0"/>
+				<textElement textAlignment="Left">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="729" y="3" width="70" height="15" uuid="007a0b85-e6df-4a2d-81dd-aa46ca58cd8a"/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("dd MMMM yyyy", new java.util.Locale("id"))
+.format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

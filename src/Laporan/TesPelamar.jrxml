@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e8851f85-5b27-4113-be34-942c39a9b7a0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="20"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tes_calon_karyawan.`id_tes` AS tes_calon_karyawan_id_tes,
+     tes_calon_karyawan.`nama_tes` AS tes_calon_karyawan_nama_tes,
+     tes_calon_karyawan.`posisi_tes` AS tes_calon_karyawan_posisi_tes,
+     tes_calon_karyawan.`interview_tes` AS tes_calon_karyawan_interview_tes,
+     tes_calon_karyawan.`psikotes_tes` AS tes_calon_karyawan_psikotes_tes,
+     tes_calon_karyawan.`kemampuan_tes` AS tes_calon_karyawan_kemampuan_tes,
+     tes_calon_karyawan.`hasil_tes` AS tes_calon_karyawan_hasil_tes
+FROM
+     `tes_calon_karyawan` tes_calon_karyawan]]>
+	</queryString>
+	<field name="tes_calon_karyawan_id_tes" class="java.lang.String"/>
+	<field name="tes_calon_karyawan_nama_tes" class="java.lang.String"/>
+	<field name="tes_calon_karyawan_posisi_tes" class="java.lang.String"/>
+	<field name="tes_calon_karyawan_interview_tes" class="java.lang.String"/>
+	<field name="tes_calon_karyawan_psikotes_tes" class="java.lang.String"/>
+	<field name="tes_calon_karyawan_kemampuan_tes" class="java.lang.String"/>
+	<field name="tes_calon_karyawan_hasil_tes" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="131" splitType="Stretch">
+			<staticText>
+				<reportElement x="-1" y="58" width="555" height="14" uuid="ff3c7e16-83de-4f59-9019-c0345d035f1c"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Complex Pertokoan Glodok Plaza Blok F No. 115, Taman Sari, Jakarta Barat 11180]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="72" width="555" height="14" uuid="b6831d3c-b1df-486f-85a9-0fddfadb51f3"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Telp. (021) 7777 456, Email. Jakarta@yakinmaju.com]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="96" width="555" height="1" uuid="c4c85d42-87fa-45a2-85a8-1f279ababd24"/>
+			</line>
+			<image>
+				<reportElement x="158" y="0" width="236" height="47" uuid="3bfb691e-5bfe-4d92-8a9a-fe4738017eb1"/>
+				<imageExpression><![CDATA["D:\\project java\\Perekrutan\\src\\Laporan\\logo yms.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="111" width="555" height="20" uuid="6e7f7d1a-9d44-487c-8f02-4057205221c9"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[LAPORAN HASIL TES PELAMAR]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement x="502" y="41" width="53" height="20" backcolor="#CCCCCC" uuid="c1acb113-95b8-419d-92ba-2ac7d143c47f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="428" y="41" width="74" height="20" backcolor="#CCCCCC" uuid="86ad4194-42a2-4539-bed3-021b19b93f93"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="369" y="41" width="59" height="20" backcolor="#CCCCCC" uuid="7ba85ecc-0cee-40d4-9e09-19aa1ba6104b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="300" y="41" width="69" height="20" backcolor="#CCCCCC" uuid="1b336111-b321-46c3-8586-60e7ef4aa9f9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="200" y="41" width="100" height="20" backcolor="#CCCCCC" uuid="44293a51-e170-4fe0-8395-0511039bec20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="100" y="41" width="100" height="20" backcolor="#CCCCCC" uuid="1991e90c-c1cd-4764-ac6a-94b898d869d6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="41" width="100" height="20" backcolor="#CCCCCC" uuid="17632b7e-cd71-4d0d-a6dc-5edc2bb83686"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="41" width="100" height="20" uuid="b42b5c6b-df98-4279-acdd-d216b982cff4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ID TES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="41" width="100" height="20" uuid="a84bd79b-d19a-4954-89c7-33a294ebb66d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="41" width="100" height="20" uuid="fce94529-9dd0-453d-b4b7-69f89c55df35"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[POSISI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="41" width="69" height="20" uuid="ca7ca26d-abb1-4ef0-8131-ab281af1b569"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[INTERVIEW]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="369" y="41" width="59" height="20" uuid="2de110a6-1d23-421d-a1b7-14536c719fca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[PSIKOTES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="428" y="41" width="74" height="20" uuid="57958636-69fd-4518-bea7-be5067aa6e94"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[KEMAMPUAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="502" y="41" width="53" height="20" uuid="f6a13ba8-79ec-4c15-aa0a-6478a671a1fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[HASIL]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="502" y="0" width="53" height="20" uuid="2d73ea87-c90a-4ad8-9232-a5102c5a4d5f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="428" y="0" width="74" height="20" uuid="0e9ce82e-e590-42f8-9112-9e5a76f76b2d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="369" y="0" width="59" height="20" uuid="9052d4b5-f7cb-4129-b534-7cff76606e1c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="300" y="0" width="69" height="20" uuid="6cc62d89-2420-4bfb-9792-c11227e7e476"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="200" y="0" width="100" height="20" uuid="40e35116-a971-45d0-bf38-039b9d07497b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="100" y="0" width="100" height="20" uuid="87422f9f-d201-47fd-bd0c-2fac325fb202"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="100" height="20" uuid="a083f95d-ab3c-4ec3-861c-49bff831067a"/>
+			</rectangle>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="502" y="0" width="52" height="20" uuid="51bd924f-e1a3-45ca-8d52-b317173ac3bc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tes_calon_karyawan_hasil_tes}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="428" y="0" width="74" height="20" uuid="459b484f-cad7-49f2-aa2f-77189ee6d174"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tes_calon_karyawan_kemampuan_tes}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="369" y="0" width="59" height="20" uuid="ae4f52c3-c9cb-40a0-a356-06dd352ce3f8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tes_calon_karyawan_psikotes_tes}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="300" y="0" width="69" height="20" uuid="f8b7d82f-1eed-43f8-bbfb-a10657891095"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tes_calon_karyawan_interview_tes}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="200" y="0" width="100" height="20" uuid="2cb5c8e3-22c2-4770-b4e5-2cc76311977b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tes_calon_karyawan_posisi_tes}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="100" y="0" width="100" height="20" uuid="c88b15f1-7d29-4e2e-83cc-4be9b37c5887"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tes_calon_karyawan_nama_tes}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="100" height="20" uuid="3bcbfaa4-0030-47ce-882d-f95556d1c444"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tes_calon_karyawan_id_tes}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="18" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="218" splitType="Stretch">
+			<textField evaluationTime="Report">
+				<reportElement x="514" y="172" width="40" height="20" uuid="02a20365-6f12-4b46-91b5-17d921dc0fcc"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="422" y="25" width="100" height="20" uuid="8984804f-f69c-436e-b829-7ac8ba719430"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Mengetahui,]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-1" y="159" width="555" height="1" uuid="e467d942-f391-4f87-9e06-adcbe90f1376"/>
+			</line>
+			<staticText>
+				<reportElement x="422" y="117" width="100" height="20" uuid="3e7f3e82-78fb-4008-895b-283ffbf6acee"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Dono]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="434" y="172" width="80" height="20" uuid="21deafb0-9e1b-4d14-bdcb-fd29b3d6d8e1"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Halaman "+$V{PAGE_NUMBER}+" dari"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="422" y="45" width="100" height="20" uuid="f19493c5-5825-4b1a-b36d-48723eb6cedc"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[HRD]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="463" y="7" width="80" height="18" uuid="4425f2fa-f27f-4cfb-8304-10e0803065df"/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("dd MMMM yyyy", new java.util.Locale("id"))
+.format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="422" y="7" width="38" height="18" uuid="a5fbd879-0b15-4780-9ee6-128da598097c"/>
+				<textElement textAlignment="Left">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
